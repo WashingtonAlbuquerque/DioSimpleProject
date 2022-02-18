@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dio Brando</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src='main.js'></script>
+</head>
+<body id="dioo">
+   <div id="display">
+  <img src="dio4.png" width="900px">
+  <div id="menu">
+   <a href="index.html">Home</a> I
+   <a href="sobre.html">Sobre</a> I
+   <a href="onde.html">Onde Encontrar</a> I
+   <a href="Derrotar.html">Como Derrotar</a> I
+
+
+  </div>
+
+ <div id="conteudo">
+    <h1>
+        Como derrotar Dio
+    </h1>
+    <h2>
+      Escolha uma Opção <br>
+
+      <button id="lord" onclick="TocarMusica()">Stand </button>
+      <button id="lord2" onclick="TocarMusica2()">Hamon</button>
+
+    </h2>
+    <p>
+        
+        </p>
+        <hr> 
+        <img id= "wa" src="dio6.jpg" height="500px" width="895px" padding="50px" >
+        <p id="six">
+           <strong> Dio apos roubar o corpo de Jonathan Joestar </strong>
+        
+        
+            
+            
+            
+                </p>
+
+
+ </div>
+
+
+</div><!--fim-->
+
+<div id="rodape">
+    Todos os direitos reservados a Lord Dio
+</div>
+
+<script>
+function TocarMusica2(){
+    var audio1 = new Audio();
+    audio1.src = "audio/Dioo.mp3";
+    audio1.play();
+    lord.addEventListener("click",TocarMusica2)
+    lord.innerText = "Hamon Talvez Não Funcione  " 
+    lord2.style.background = "black"
+    six.innerText= "Embora o Hamon Seja Muito Poderoso Não e 100% eficaz contra o Dio"
+    var img = document.querySelector("#wa");
+    img.setAttribute('src', 'diofinal.jfif');
+
+}
+    
+
+
+function TocarMusica(){
+    var audio1 = new Audio();
+    audio1.src = "audio/ZA WARUDO.mp4";
+    audio1.play();
+    lord.addEventListener("click",TocarMusica)
+    lord2.innerText = "Voce Escolheu Certo! " 
+    lord.style.background = "black"
+    conteudo.style.background = "yellow"
+    var img = document.querySelector("#wa");
+    lord.addEventListener("click",TocarMusica)
+    img.setAttribute('src', 'za-warudo.gif');
+    six.innerText= "Parabens Voce Conseguiu"
+    dioo.style.background = "rgba(210, 238, 130, 0.68)"
+
+    
+    
+    
+  
+}
+
+</script>
+  
+  
+
+</body>
+</html>
